@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addproduit">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_product"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name "
+
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="description"
+
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/description"
+                    android:background="@drawable/background_1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/txtreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="reference"
+
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/reference1"
+                    android:background="@drawable/background_1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/txtprix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="prix "
+
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prix"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/txtlibelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="libelle "
+
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/libelle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="upload your image "
+
+                />
+            <ImageButton
+                android:id="@+id/uploadbtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/uploadimg"/>
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgproduit"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                     />
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:text="submit"
+                android:backgroundTint="@color/purple_200"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
